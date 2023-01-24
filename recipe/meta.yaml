@@ -1,14 +1,14 @@
 {% set name = "udocker" %}
-{% set version = "1.3.6" %}
+{% set version = "1.3.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  #sha256: c39e797e93ad4b75e362ee8cd97035822915bcc78a2332e3bbf08fd6fc095fa2
-  git_url: https://github.com/indigo-dc/udocker.git
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a07938f3441a54289554bae40b99f40eff590d736cd85e91728443dc860edc95
+  #git_url: https://github.com/indigo-dc/udocker.git
   patches:
     - setup.py.patch
 
