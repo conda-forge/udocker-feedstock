@@ -6,9 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c39e797e93ad4b75e362ee8cd97035822915bcc78a2332e3bbf08fd6fc095fa2
-  #git_url: https://github.com/indigo-dc/udocker.git
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  #sha256: c39e797e93ad4b75e362ee8cd97035822915bcc78a2332e3bbf08fd6fc095fa2
+  git_url: https://github.com/indigo-dc/udocker.git
   patches:
     - setup.py.patch
 
