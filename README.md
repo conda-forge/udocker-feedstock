@@ -1,11 +1,11 @@
-About udocker
-=============
+About udocker-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/udocker-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/indigo-dc/udocker
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/udocker-feedstock/blob/main/LICENSE.txt)
 
 Summary: udocker is a basic user tool to execute simple docker containers in user space without requiring root privileges.
 
