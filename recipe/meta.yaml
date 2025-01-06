@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f7f4d0cbd8b4efc93584629435808b95fc46c3c536839e3b773873d23a9f2f59
   #git_url: https://github.com/indigo-dc/udocker.git
   patches:
@@ -14,15 +14,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - __linux
 
 test:
@@ -32,6 +32,7 @@ test:
     - pip
     - pytest-runner
     - pycurl
+    - python {{ python_min }}
   source_files:
     - tests
   commands:
